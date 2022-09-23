@@ -1,0 +1,36 @@
+.submenuContainer,
+.viewAll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2b3c;
+  }
+}
+.viewAll {
+  p {
+    font-size: 12px;
+    color: #f8901c;
+    font-weight: 400;
+  }
+
+  i {
+    background: #f8901c;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  svg {
+    font-size: 16px;
+    color: #fafbfa;
+  }
+}

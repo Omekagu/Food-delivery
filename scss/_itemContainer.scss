@@ -1,0 +1,98 @@
+.itemCard {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0;
+
+  &__imgBox {
+    width: 100px;
+    height: 100px;
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    position: absolute;
+    top: -10px;
+  }
+  .image {
+    position: absolute;
+    top: 0;
+    width: 60%;
+  }
+  &__imgContent {
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: 0.15);
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 50px;
+    width: 100%;
+  }
+  .rating {
+    &.orange svg {
+      color: #f8901c !important;
+    }
+    &.gray svg {
+      color: #373848 !important;
+    }
+  }
+  &__isFavorite {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &.active svg {
+      color: #ff0000;
+      filter: drop-shadow(0px 0px 8px #ff0000);
+    }
+
+    svg {
+      font-size: 10px;
+      color: #ff000088;
+    }
+  }
+  .name {
+    font-size: 12px;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .price {
+    font-size: 16px;
+  }
+  svg {
+    font-size: 16px;
+  }
+  span {
+    color: #f8901c;
+    font-size: 12px;
+  }
+  .addToCart {
+    background: #f8901c;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: 0.15);
+    cursor: pointer;
+
+    svg {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+  .priceAdd {
+    display: flex;
+    justify-content: space-between;
+  }
+}
